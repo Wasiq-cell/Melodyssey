@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Melodyssey</title>
+  <style>
+    /* Basic styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .card {
+      width: 30%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .card-description {
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Melodyssey</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Contact</a></li>
+      <a href="https://accounts.spotify.com/authorize?client_id=749e88bb814f4ee4a3ab56aeed4519c3&redirect_uri=http://localhost:8000/callback&scope=user-read-private%20user-read-email&response_type=code" class="button">Explore</a>
+
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Welcome to Melodyssey</h2>
+          <p class="card-description">Your musical journey starts here...</p>
+          <a href="#" class="button">Explore</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">About Melodyssey</h2>
+          <p class="card-description">Some information about Melodyssey...</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Featured Music</h2>
+          <div class="card-description">
+            <!-- Display featured music here -->
+            <div>
+              <h3>Song Title</h3>
+              <p>Artist Name</p>
+              <!-- Add music cover image -->
+            </div>
+            <!-- Repeat for other featured music -->
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Contact Us</h2>
+          <p class="card-description">Contact information goes here...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 Melodyssey. All rights reserved.
+  </footer>
+</body>
+</html>
